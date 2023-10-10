@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="print"></p>
+    <button onclick="getPower()">get Power</button>
+    <script>
+        let ele=document.getElementById("print")
+        function getPower(){
+            let num1=Number(prompt("enter your base num"))
+            let num2=Number(prompt("enter your power num"))
+            ele.innerHTML=`Power of ${num1,num2} is ${Math.pow(num1,num2)}`
+            ele.style.color="red"
+        }
+    </script>
+</body>
+</html>
