@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="head" onmouseover="getOver()"> hey hello</h1> -->
+    <h1 id="head" onmouseout="getOut()">Hey hello Gitgyes</h1>
+    <script>
+        let ele=document.getElementById("head")
+
+        // function getOver(){ when mouse is hovering towards to the text that time content will get change
+            function getOut(){ //when we out the mouse from content then the another text will get apply
+            ele.innerHTML="good bye"
+            ele.style.color="red"
+        }
+    </script>
+</body>
+</html>
