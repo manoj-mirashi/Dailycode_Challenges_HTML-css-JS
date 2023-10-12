@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- whenever you  copy the text then that time you will get a pop up -->
+    <h1 id="head" oncopy="getcopy()">copy this text</h1>
+    <div id="box"></div>
+    <script>
+        let ele=document.getElementById("head")
+        let ele1=document.getElementById("box")
+        function getcopy(){
+            alert("your text is copied successfully")
+            ele1.style.height="200px"
+            ele1.style.width="200px"
+            ele1.style.border="1px solid"
+            ele1.style.backgroundColor="red"
+            ele1.style.borderRadius="100px"
+        }
+    </script>
+</body>
+</html>
